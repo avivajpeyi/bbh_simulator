@@ -1,0 +1,16 @@
+.DS_Store
+.ipynb_checkpoints
+cache
+*.log
+build
+docs/notebooks/*/*.html
+__pycache__
+output
+*idea
+venv
+notebooks
+notebooks/TEST
+.mypy_cache
+*_version.py
+*.egg-info
+src/tess_atlas/template.ipynb
