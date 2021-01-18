@@ -23,7 +23,14 @@ CLASSIFIERS = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
 ]
-INSTALL_REQUIRES = ["numpy", "corner", "pandas", "surfinBH", "networkx"]
+INSTALL_REQUIRES = [
+    "numpy",
+    "corner",
+    "pandas",
+    "gwsurrogate",
+    "surfinBH",
+    "networkx",
+]
 EXTRA_REQUIRE = {"test": ["pytest>=3.6", "testbook>=0.2.3"]}
 EXTRA_REQUIRE["dev"] = EXTRA_REQUIRE["test"] + [
     "pre-commit",
