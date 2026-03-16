@@ -4,7 +4,7 @@ import unittest
 
 from bbh_simulator.black_hole_population import BlackHolePopulation
 
-NUM_BBH = 2 ** 3
+NUM_BBH = 2**3
 
 
 class TestBlackHolePopulation(unittest.TestCase):

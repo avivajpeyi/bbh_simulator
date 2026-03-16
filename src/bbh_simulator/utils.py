@@ -32,4 +32,4 @@ def is_power_of_two(x):
 
 
 def mag(x):
-    return math.sqrt(math.fsum([i ** 2 for i in x]))
+    return math.sqrt(math.fsum([i**2 for i in x]))

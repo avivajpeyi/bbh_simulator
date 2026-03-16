@@ -87,7 +87,7 @@ class BlackHolePopulation:
 
     @staticmethod
     def __truncate_bh_list(
-        merging_bh_list: List[BlackHole]
+        merging_bh_list: List[BlackHole],
     ) -> List[BlackHole]:
         if not len(merging_bh_list) % 2 == 0:
             logging.info(f"Merging BH population uneven, removing a BH")
@@ -96,7 +96,7 @@ class BlackHolePopulation:
 
     @staticmethod
     def pair_up_bh(
-        merging_bh_list: List[BlackHole]
+        merging_bh_list: List[BlackHole],
     ) -> List[Tuple[BlackHole, BlackHole]]:
         # https://stackoverflow.com/questions/5389507/iterating-over-every-two-elements-in-a-list
         paired_up_population = list(zip(merging_bh_list, merging_bh_list[1:]))[
@@ -196,7 +196,7 @@ class BlackHolePopulation:
         ax2.plot(stats.index, stats.avg_spin, color="blue", marker="o")
         ax1.set_xlabel("Generation Number", fontsize=14)
         ax1.set_ylabel("Average Mass", color="red", fontsize=14)
-        ax2.set_ylabel("Average |\u03C7|", color="blue", fontsize=14)
+        ax2.set_ylabel("Average |\u03c7|", color="blue", fontsize=14)
         ax2.set_ylim(0, 1)
         plt.locator_params(axis="x", integer=True, tight=True)
         plt.margins(0.05)
@@ -308,7 +308,7 @@ def hierarchy_pos(
 
 
 def main():
-    pop = BlackHolePopulation(number_of_initial_bh=2 ** 5)
+    pop = BlackHolePopulation(number_of_initial_bh=2**5)
     pop.conduct_multiple_mergers()
     pop.render_population("mergers.png")
     stats = pop.repeat_expirement(num_expt=5)
