@@ -10,8 +10,8 @@ import surfinBH
 
 BH_FIT = surfinBH.LoadFits("NRSur7dq4Remnant")
 
-PM = "\u00B1"  # ±
-CHI = "\u03C7"  # χ
+PM = "\u00b1"  # ±
+CHI = "\u03c7"  # χ
 c = 299792  # speed of liught in km/s
 
 

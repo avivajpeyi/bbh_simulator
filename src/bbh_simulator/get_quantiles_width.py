@@ -6,6 +6,7 @@ This module does what....
 Example usage:
 
 """
+
 import pandas as pd
 import plot_corner_weighted_with_kick
 import tqdm
